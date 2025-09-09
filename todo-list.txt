@@ -3,7 +3,7 @@
 
 Referent du groupe : Brian Lecoq
 
-Groupe (3 / 4 personnes):
+Groupe (4 / 4 personnes):
 Leo Krakovinsky
 Brian Lecoq
 Landry Lecrosnier
@@ -23,6 +23,7 @@ Deadline : 05 / 09
 
 Deadline : 19 / 09 (10h)
 - Questionnaire 1 (Moodle)
+-> En cours 
 
 Deadline : 26 / 09 (18h)
 GitHub livrable 1 (ReadMe + organisation projet)
