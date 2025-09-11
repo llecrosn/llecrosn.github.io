@@ -10,21 +10,21 @@
     <title>Accueuil</title>
   </head>
 <body>
+
+
       <div class="navbar">
-       
+
             <ul>
-                
+                <li class="navbutton"><a href="Main.html">Accueil</a></li>
                 <li class="navbutton"><a href="">page 1</a></li>
                 <li class="navbutton"><a href="">page 2</a></li>
                 <li class="navbutton"><a href="">page 3</a></li>
-
-
                 
             </ul>
             
         </div>
 
-        <section class="Displayer1">
+        <section class="Displayer1" id="Firstpage">
 
                 <H1 class="MainTitle"><span><br>Scaleway, the cloud <br/> that make</span><span style="color: rgb(47, 47, 250);"> sens</span> </H1>
         </section>
@@ -33,5 +33,30 @@
                 <h1 class="FooterTextTest">ceci est un texte</h1>
                 <!-- add severals images here -->
         </footer>
+
+        
+    <script>
+        (function() {
+            document.addEventListener("mousemove", parallax);
+            const elem = document.querySelector("#Firstpage");
+
+            function parallax(e) {
+                let _w = window.innerWidth/2;
+                let _h = window.innerHeight/2;
+                let _mouseX = e.clientX;
+                let _mouseY = e.clientY;
+                let _depth1 = `${50 - (_mouseX - _w) * 0.001}% ${50 - (_mouseY - _h) * 0.001}%`;
+                let _depth2 = `${50 - (_mouseX - _w) * 0.002}% ${50 - (_mouseY - _h) * 0.002}%`;
+                let _depth3 = `${50 - (_mouseX - _w) * 0.006}% ${50 - (_mouseY - _h) * 0.006}%`;
+                let x = `${_depth3}, ${_depth2}, ${_depth1}`;
+                elem.style.backgroundPosition = x;
+            }
+        })();
+    </script>
 </body>
 </html>
+
+
+
+
+
