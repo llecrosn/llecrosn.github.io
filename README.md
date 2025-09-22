@@ -1,4 +1,4 @@
-# Site SAE Groupe 10
+# Site SAE Groupe 10.
 ## Site Web
 Page github: [cliquez ici](https://llecrosn.github.io/)
 ## Membres: Leo KRAKOVINSKY Brian LECOQ Landry LECROSNIER Mathis GOSSIAUX--CHOPARD-GUILLAUMOT Idrissa BARRY
