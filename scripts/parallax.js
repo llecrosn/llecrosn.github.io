@@ -3,8 +3,8 @@
     const elem = document.querySelector("#Firstpage");
 
     function parallax(e) {
-        let _w = window.innerWidth/2;
-        let _h = window.innerHeight/2;
+        let _w = window.innerWidth/2.0;
+        let _h = window.innerHeight/2.0;
         let _mouseX = e.clientX;
         let _mouseY = e.clientY;
         let _depth1 = `${50 - (_mouseX - _w) * 0.001}% ${50 - (_mouseY - _h) * 0.001}%`;

@@ -34,6 +34,8 @@ html{
 .MainTitle{
     position: absolute;
     color: white;
+    -webkit-text-stroke: #b8b8b8;
+    -webkit-text-stroke-width: 1px;
     left: 12vw;
     font-size: 5vw;
     line-height: 1.0em;
