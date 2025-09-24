@@ -6,33 +6,97 @@
     <link rel="icon" type="image/vnd.icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="style/common.css">
-    <title>Scaleway - Page 1</title>
+    <link rel="stylesheet" href="style/page1.css">
+    <link rel="preconnect" href="https.fonts.googleapis.com">
+    <link rel="preconnect" href="https.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Scaleway - Notre Histoire</title>
 </head>
 <body>
     <div class="navbar">
-
         <ul>
             <li class="navbutton"><a href="index.html">Accueil</a></li>
-            <li class="navbutton"><a href="page1.html">Histoire</a></li>
-            <li class="navbutton"><a href="page2.html">Economie</a></li>
+            <li class="navbutton"><a href="page1.html">Notre Histoire</a></li>
+            <li class="navbutton"><a href="page2.html">page 2</a></li>
             <li class="navbutton"><a href="page3.html">page 3</a></li>
             <li class="navbutton"><a href="page4.html">page 4</a></li>
             <li class="navbutton"><a href="page5.html">page 5</a></li>
         </ul>
-        
     </div>
-        
-   
-   <br>
-    <br>
-    <br>
-    <br>
-    <br>
-   <p>Page en développement</p>
-</body>
-<footer>
+
+    <div class="page-container">
+        <header class="page-header">
+            <h1>L'épopée de Scaleway</h1>
+            <p class="subtitle">De l'idée audacieuse à un acteur majeur du cloud européen</p>
+        </header>
+
+        <section class="timeline-section">
+            <h2>Notre histoire en quelques dates clés</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>1999 - Les débuts</h3>
+                        <p>Création d'Online.net, le précurseur de Scaleway, qui deviendra un des pionniers de l'hébergement web en France.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>2015 - Naissance de Scaleway</h3>
+                        <p>Lancement de la marque Scaleway avec une offre de serveurs bare-metal ARM, marquant une innovation majeure sur le marché du cloud.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>2018 - Écosystème complet</h3>
+                        <p>Scaleway élargit son offre pour devenir un fournisseur de cloud complet, proposant un large éventail de services IaaS.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>2020 - Supercalculateur IA</h3>
+                        <p>Lancement du supercalculateur Jean Zay, l'un des plus puissants d'Europe, démocratisant l'accès à l'IA pour les entreprises et les chercheurs.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>2023 - Vers le SecNumCloud</h3>
+                        <p>Scaleway franchit une étape majeure en obtenant la certification SecNumCloud pour plusieurs de ses services, garantissant le plus haut niveau de sécurité.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
         <p>
-            Lecoq Brian
+            Lecoq Brian - SAE BUT 1 Informatique
         </p>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target); // Pour ne jouer l'animation qu'une fois
+                    }
+                });
+            }, {
+                threshold: 0.1 // L'animation se déclenche quand 10% de l'élément est visible
+            });
+
+            // On observe chaque élément de la frise
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            timelineItems.forEach(item => {
+                observer.observe(item);
+            });
+        });
+    </script>
+</body>
 </html>
