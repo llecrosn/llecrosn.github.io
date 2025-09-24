@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /* Reset de base */
 * {
     margin: 0;
@@ -22,7 +22,7 @@ html {
 .Displayer1 {
     width: 100%;
     height: 105vb;
-    background-image: url(../Images/photo-1535557597501-0fee0a500c57.jpg);
+    background-image: url(../assets/background.jpg);
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
@@ -127,5 +127,3 @@ html {
     border-width: 3.5px;
     border-radius: 50%;
 }
-=======
->>>>>>> d980ce6 (ajout de style page3)
