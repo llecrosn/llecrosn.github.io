@@ -1,20 +1,24 @@
+/* Variables */
+:root {
+    --main-color: #452145;
+    --accent-color: #A284AE;
+    --secondary-color: #EDF060;
+    --tertiary-color: #2E79DC;
+}
+
 /*Navbar*/
 .navbar ul li{
     list-style: none;
     display: inline-block;
     margin: 0 2vw;
     position: relative;
-    
 }
-
-
 
 .navbar ul li a{
    text-decoration: none;
    color: #ffffff;
    
    font-size: 2vw;
-   
 }
 
 .navbar ul li::after{

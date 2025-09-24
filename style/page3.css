@@ -1,0 +1,94 @@
+:root {
+    --main-color: #452145;
+    --accent-color: #A284AE;
+    --secondary-color: #EDF060;
+    --tertiary-color: #2E79DC;
+
+    --background-color: #d9d9f3;
+    --background-color-second: #515174;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../assets/font/Montserrat.ttf");
+}
+
+* {
+    font-family: 'Montserrat';
+}
+html, body {
+  width: 100%;
+  height:100%;
+}
+
+body {
+    background: linear-gradient(-45deg, var(--background-color), var(--background-color-second));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.title {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title h1 {
+    font-size: 64px;
+    font-weight: 300;
+    font-style: normal;
+    margin-right: 2vh;
+    color: var(--main-color);
+}
+.subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+}
+.subtitle h2 {
+    font-size: 23px;
+    font-weight: 300;
+    font-style: normal;
+    margin-right: 2vh;
+    margin: 0;
+
+}
+/* Briefing */
+.content h3 {
+    font-weight: 400;
+    margin-left: 1vh;
+}
+
+/* Fonction de la personne */
+.content h2 {
+
+}
+/* Nom de la personne */
+.content p {
+
+}
+
+.subTitle {
+
+}
+
+.paragraph {
+
+}
+
+.keyElement {
+
+}
