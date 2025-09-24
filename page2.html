@@ -4,60 +4,44 @@
     <!-- Theme: Economie -->
     <!-- Navbar -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Css/Main.css">
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>Accueuil</title>
-  </head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Css/Page2.css" />
+    <title>Page1</title>
+</head>
+
 <body>
 
-
-      <div class="navbar">
-
-            <ul>
-                <li class="navbutton"><a href="Main.html">Accueil</a></li>
-                <li class="navbutton"><a href="">page 1</a></li>
-                <li class="navbutton"><a href="Page2.html">page 2</a></li>
-                <li class="navbutton"><a href="">page 3</a></li>
-                <li class="navbutton"><a href="./Page4.html">page 4</a></li>
-                <li class="navbutton"><a href="">page 5</a></li>
-                
-            </ul>
-            
-        </div>
-
-        <section class="Displayer1" id="Firstpage">
-
-                <H1 class="MainTitle"><span><br>Scaleway, the cloud <br/> that make</span><span style="color: rgb(47, 47, 250);"> sens</span> </H1>
-        </section>
-
-        <footer class="FooterMain">
-                <h1 class="FooterText">ceci est un texte</h1>
-               
-        </footer>
+    <div class="navbar">
+    <img src="../Images/FS-AFFI-00315Scaleway.png" alt="Logo" class="LogImg" id="logo">
 
 
+  <nav id="menu" class="menu-hidden">
+    <ul>
+       <li><a href="Main.html">Accueuil</a></li>
+        <li><a href="page1.html">Page 1</a></li>
+        <li><a href="page3.html">Page 3</a></li>
+        <li><a href="page4.html">Page 4</a></li>
+        <li><a href="page5.html">Page 5</a></li>
+    </ul>
+  </nav>
+    </div>
 
-        <!--script arrière plan animed/responsive -->
-    <script>
-        (function() {
-            document.addEventListener("mousemove", parallax);
-            const elem = document.querySelector("#Firstpage");
+    <section class="Displayer1" id="Firstpage">
+        <h1 class="MainTitle">
+            <span><br />Scaleway, le cloud accessible <br /> à tous<br /></span>
+        </h1>
 
-            function parallax(e) {
-                let _w = window.innerWidth/2;
-                let _h = window.innerHeight/2;
-                let _mouseX = e.clientX;
-                let _mouseY = e.clientY;
-                let _depth1 = `${50 - (_mouseX - _w) * 0.0001}% ${50 - (_mouseY - _h) * 0.0001}%`;
-                let _depth2 = `${50 - (_mouseX - _w) * 0.0002}% ${50 - (_mouseY - _h) * 0.0002}%`;
-                let _depth3 = `${50 - (_mouseX - _w) * 0.0006}% ${50 - (_mouseY - _h) * 0.0006}%`;
-                let x = `${_depth3}, ${_depth2}, ${_depth1}`;
-                elem.style.backgroundPosition = x;
-            }
-        })();
-    </script>
+        <img src="../Images/Infrastructure_1_Fond_Perdu_Off_b6638604c6.png" alt="" class="dispImages1" />
+    </section>
+
+    <footer class="FooterMain">
+        <h1 class="FooterText">ceci est un texte</h1>
+        <!-- add severals images here -->
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../Scripts/Page2.js"></script>
 </body>
+
 </html>
