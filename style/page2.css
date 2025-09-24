@@ -110,6 +110,7 @@ html {
     list-style: none;
     margin-top: 8px;
     background-color: #a284aea5;
+    text-align: center;
 }
 .menu-visible ul li a{
     text-decoration: none;
