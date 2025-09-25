@@ -1,0 +1,61 @@
+/* Navbar */
+
+
+/* Media queries */
+@media all and (max-width: 560px) {
+
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    height: 80px;
+    padding: 10 0;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: fixed;
+    background-color: rgba(114, 107, 107, 0.282);
+    z-index: 10;
+}
+
+/* Hidden Menu */
+.menu-hidden {
+    position: absolute;
+    left: 40px;
+    z-index: 400;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.menu-visible {
+    top: 30px;
+    position: absolute;
+    display: flex;
+    left: 22px;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(50px);
+}
+
+.menu-visible ul li{
+    list-style: none;
+    margin-top: 8px;
+    background-color: #a284aea5;
+    text-align: center;
+}
+.menu-visible ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.LogImg {
+    width: 65px;
+    margin-left: 30px;
+    cursor: pointer;
+    border-width: 3.5px;
+    border-radius: 50%;
+}
