@@ -1,4 +1,12 @@
+:root {
+    --main-color: #452145;
+    --accent-color: #A284AE;
+    --secondary-color: #EDF060;
+    --tertiary-color: #2E79DC;
 
+    --background-color: #d9d9f3;
+    --background-color-second: #9e9ef7;
+}
 /* Reset de base */
 * {
     margin: 0;
@@ -18,11 +26,12 @@ html {
     background-position: top;
 }
 
+
 /* Displayers */
 .Displayer1 {
     width: 100%;
-    height: 105vb;
-    background-image: url(../assets/background.jpg);
+    height: 60vb;
+    background: linear-gradient(-45deg, var(--background-color), var(--background-color-second));
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
@@ -31,40 +40,84 @@ html {
     gap: 4vw;
 }
 
+.divider{
+    height: 1.5vb;
+    background: linear-gradient(90deg, rgb(73, 39, 132), rgb(44, 19, 65));
+}
+
+
+.Displayer2 {
+    width: 100%;
+    height: 50vb;
+    background: linear-gradient(-15deg, var(--main-color), var(--background-color-second));
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4vw;
+}
+
+
+.MainTitle2{
+    color: rgb(255, 255, 255);
+    font-style: 'Montserrat', sans-serif;
+    font-size: 1.7vw;
+    left: 30px;
+    margin-top: -5vw;
+    text-align: left;
+    position: relative;
+    line-height: 2em;
+}
+
+.MainSubtitle2{
+     font-size: 1.2vw;
+    font-style: 'Montserrat', sans-serif;
+}
+
+
 .MainTitle {
     position: absolute;
-    color: white;
+    color: var(--tertiary-color);
     justify-content: center;
     text-align: center;
-    top: 8vb;
-    font-size: 5vw;
+    margin-top: -4vw;
+    font-size: 4vw;
     line-height: 1.0em;
+    font-style: 'Montserrat', sans-serif;
 }
 
-
-
-/* images displaying */
-.dispImages1 {
-    width: 20vw;
-    height: 20vw;
-    position: relative;
-    top: 10vw;
-    left: 20vw;
-    border-radius: 10%;
+.MainSubtitle{
+    font-size: 2vw;
+    font-style: 'Montserrat', sans-serif;
+    color: var(--main-color);
 }
+
 
 .FooterMain {
-    height: 10vb;
-    background-color: rgb(12, 171, 250);
+    height: 4vb;
+    background: linear-gradient(90deg, rgb(73, 39, 132), rgb(44, 19, 65));
     align-content: center;
 }
 
 .FooterText {
-    text-align: center;
+    text-align: left;
     position: relative;
     color: white;
-    font-size: 2vw;
+    font-size: 1vw;
 }
+
+/* images displaying */
+
+.dispImages1 {
+    width: 10vw;
+    height: 5vw;
+    position: relative;
+    top: 5vw;
+    border-radius: 10%;
+}
+
+
 
 /* Navbar */
 
