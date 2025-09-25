@@ -5,7 +5,8 @@
     --bright-yellow: #EDF060;
     --bright-blue: #2E79DC;
     --text-color: #F0F0F0;
-    --background-color: #1a1a1d;
+    --text-color2 : #2E79DC;
+    --background-color: #d9d9f3;
 }
 
 body {
@@ -42,7 +43,7 @@ body {
 .timeline-section h2 {
     text-align: center;
     font-size: 2.5rem;
-    color: var(--text-color);
+    color: var(--text-color2);
     margin-bottom: 50px;
     border-bottom: 3px solid var(--bright-blue);
     padding-bottom: 10px;
@@ -76,7 +77,9 @@ body {
 .timeline-item {
     position: relative;
     width: 50%;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
     /* État initial pour l'animation d'apparition */
     opacity: 0;
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
@@ -123,12 +126,14 @@ body {
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
     transform-style: preserve-3d;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 /* EFFET INTERACTIF 3D AU SURVOL */
 .timeline-item:hover .timeline-content {
     box-shadow: 0 15px 40px rgba(46, 121, 220, 0.4);
-    /* La carte se "soulève" vers l'utilisateur */
     transform: translateZ(40px) scale(1.03);
 }
 
@@ -150,3 +155,4 @@ footer {
     background-color: #111;
     color: #ccc;
 }
+
