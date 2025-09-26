@@ -294,32 +294,102 @@ html, body {
 .about {
     display: flex;
     flex-direction: column;
-    margin-bottom: 24px;
+    
 }
 
 .about h1 {
     align-self: center;
 }
 
-.engagements {
-    display: flex;
-    flex-direction: row;
+.about {
+    position: relative;
+    overflow: hidden;
+    background: var(--background-color);
+    z-index: 1;
 }
-.engagement {
-    margin-left: 10%;
-    width: 750px;
-    margin-right: 10%;
-    background: linear-gradient(-90deg, rgb(180, 122, 180), rgb(125, 125, 168));
-    border-radius: 24px;
-    padding: 12px 12px;
-    transition: transform 0.2s, box-shadow 0.2s, background 1s;
 
+.parallax-blobs {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 0;
 }
+
+.blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.55;
+    transition: transform 0.2s;
+    will-change: transform;
+}
+
+.blob1 {
+    width: 400px; height: 400px;
+    background: #a284ae;
+    left: 10%; top: 20%;
+}
+.blob2 {
+    width: 300px; height: 300px;
+    background: #edf060;
+    left: 60%; top: 10%;
+}
+.blob3 {
+    width: 350px; height: 350px;
+    background: #2e79dc;
+    left: 40%; top: 60%;
+}
+.about > *:not(.parallax-blobs) {
+    position: relative;
+    z-index: 2;
+}
+
+
+.engagements {
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px 64px; /* 24px vertical, 64px horizontal gap */
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.engagement {
+    flex: 1 1 40%;
+    max-width: 420px;
+    min-width: 300px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.engagement {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 24px;
+    padding: 12px;
+    background: radial-gradient(
+        circle at center,
+        rgb(180, 122, 180),
+        rgb(125, 125, 168)
+    );
+    background-size: 200% 200%;
+    transition: transform 0.15s ease, 
+                box-shadow 0.2s ease, 
+                background-position 0.2s ease, 
+                filter 0.6s ease;
+    filter: brightness(1) saturate(1);
+    transform-style: preserve-3d;
+}
+
 .engagement:hover {
-    /* background: linear-gradient(-45deg, rgb(233, 160, 233), rgb(167, 167, 224)); */
-    transform: translateY(-4px) scale(1.02);
+    /* transform: translateY(-4px) scale(1.02); */
     box-shadow: 0 8px 32px rgba(44, 19, 65, 0.18);
-    animation: gradient2 1s ease;
+
+    filter: brightness(1.15) saturate(1.3);
 }
 
 @keyframes gradient2 {
