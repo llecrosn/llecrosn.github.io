@@ -66,4 +66,21 @@
 .LogImg:hover {
     transform: scale(1.1);
 }
+
 /**/
+
+.LogImg {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  cursor: pointer;
+  border: 3px solid var(--accent-color);
+  border-radius: 50%;
+  background: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.LogImg:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
