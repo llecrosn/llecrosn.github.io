@@ -1,133 +1,26 @@
 :root {
-    --main-color: #452145;
-    --accent-color: #A284AE;
-    --secondary-color: #EDF060;
-    --tertiary-color: #2E79DC;
-
-    --background-color: #d9d9f3;
-    --background-color-second: #9e9ef7;
+  --main-color: #452145;
+  --accent-color: #A284AE;
+  --secondary-color: #EDF060;
+  --tertiary-color: #2E79DC;
+  --bg-gradient: linear-gradient(135deg, #f3e7ff, #d9e4ff);
 }
-/* Reset de base*/
+
+/* Reset de base */
 * {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
+body {
+  background: var(--bg-gradient);
+  color: #333;
+  overflow-x: hidden;
 }
 
-/* Banner */
-.banner {
-    width: 100%;
-    height: 100vh;
-    background-size: contain;
-    background-position: top;
-}
-
-
-/* Displayers */
-.Displayer1 {
-    width: 100%;
-    height: 60vb;
-    background: linear-gradient(-45deg, var(--background-color), var(--background-color-second));
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 4vw;
-}
-
-.divider{
-    height: 1.5vb;
-    background: linear-gradient(90deg, rgb(73, 39, 132), rgb(44, 19, 65));
-}
-
-
-.Displayer2 {
-    width: 100%;
-    height: 50vb;
-    background: linear-gradient(-15deg, var(--main-color), var(--background-color-second));
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 4vw;
-}
-
-
-.MainTitle2{
-    color: rgb(255, 255, 255);
-    font-style: 'Montserrat', sans-serif;
-    font-size: 1.7vw;
-    left: 30px;
-    margin-top: -5vw;
-    text-align: left;
-    position: relative;
-    line-height: 2em;
-}
-
-.MainSubtitle2{
-     font-size: 1.2vw;
-    font-style: 'Montserrat', sans-serif;
-}
-
-
-.MainTitle {
-    position: absolute;
-    color: var(--tertiary-color);
-    justify-content: center;
-    text-align: center;
-    margin-top: -4vw;
-    font-size: 4vw;
-    line-height: 1.0em;
-    font-style: 'Montserrat', sans-serif;
-}
-
-.MainSubtitle{
-    font-size: 2vw;
-    font-style: 'Montserrat', sans-serif;
-    color: var(--main-color);
-}
-
-
-.FooterMain {
-    height: 4vb;
-    background: linear-gradient(90deg, rgb(73, 39, 132), rgb(44, 19, 65));
-    align-content: center;
-}
-
-.FooterText {
-    text-align: left;
-    position: relative;
-    color: white;
-    font-size: 1vw;
-}
-
-/* images displaying */
-
-.dispImages1 {
-    width: 10vw;
-    height: 5vw;
-    position: relative;
-    top: 5vw;
-    border-radius: 10%;
-}
-
-
-
-/* Navbar */
-
-
-/* Media queries */
-@media all and (max-width: 560px) {
-
-}
-
-/* Navbar */
+/*navbar*/
 .navbar {
     width: 100%;
     height: 80px;
@@ -140,15 +33,15 @@ html {
     z-index: 10;
 }
 
-/* Hidden Menu */
 .menu-hidden {
     position: absolute;
-    left: 40px;
+    top: 80px; 
+    left: 30px;
     z-index: 400;
     opacity: 0;
     visibility: hidden;
+    max-height: 0;
 }
-
 
 .menu-visible {
     top: 30px;
@@ -160,23 +53,140 @@ html {
     transform: translateY(50px);
 }
 
-.menu-visible ul li{
+.menu-visible ul li {
     list-style: none;
     margin-top: 8px;
     background-color: #a284aea5;
     text-align: center;
+    border-radius: 8px;
+    padding: 5px 10px;
 }
-.menu-visible ul li a{
+
+.menu-visible ul li a {
     text-decoration: none;
     list-style: none;
     color: #ffffff;
-    font-size: 25px;
+    font-size: 20px;
+    display: block;
+
+}
+
+.menu-visible ul li a:hover {
+    background: var(--tertiary-color);
+    border-radius: 15px;
 }
 
 .LogImg {
     width: 65px;
-    margin-left: 30px;
+    margin-left: 45px;
     cursor: pointer;
     border-width: 3.5px;
     border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.LogImg:hover {
+    transform: scale(1.1);
+}
+/**/
+
+.LogImg {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  cursor: pointer;
+  border: 3px solid var(--accent-color);
+  border-radius: 50%;
+  background: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.LogImg:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+
+
+.page-header {
+  text-align: center;
+  padding: 140px 20px 40px; 
+}
+
+.page-title {
+  font-size: 3rem;
+  color: var(--main-color);
+}
+
+.page-subtitle {
+  font-size: 1.3rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+.MainTitle {
+  text-align: center;
+  margin: 50px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  width: 70%;
+  transform: perspective(1000px) rotateX(2deg);
+  transition: transform 0.3s ease;
+}
+
+.MainTitle:hover {
+  transform: perspective(1000px) rotateX(0deg) scale(1.02);
+}
+
+
+.dispinfos-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 60px 10%;
+}
+
+.dispinfos {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transform: perspective(800px) rotateY(5deg);
+  transition: all 0.3s ease;
+}
+
+.dispinfos:hover {
+  transform: perspective(800px) rotateY(0deg) scale(1.05);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.dispinfos h3 {
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
+
+.dispinfos p {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.dispinfos .small {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.FooterMain {
+  height: 60px;
+  background: linear-gradient(90deg, rgb(73, 39, 132), rgb(44, 19, 65));
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.FooterText {
+  color: white;
+  font-size: 0.95rem;
 }
