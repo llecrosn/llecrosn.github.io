@@ -1,4 +1,12 @@
 /*navbar*/
+
+:root {
+    --main-color: #452145;
+    --accent-color: #A284AE;
+    --secondary-color: #EDF060;
+    --tertiary-color: #2E79DC;
+}
+
 .navbar {
     width: 100%;
     height: 80px;
