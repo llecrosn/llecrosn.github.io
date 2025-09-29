@@ -250,9 +250,11 @@ html, body {
     padding: 0;
     background-color: rgb(226, 214, 247);
 }
-.footer p{
+.footer h1{
+    font-size: 18px;
+    font-weight: 300;
     margin: 0;
-    padding: 10px;
+    padding: 4px;
     color: rgb(66, 66, 66);
     text-align: end;
     margin-right: 8px;
