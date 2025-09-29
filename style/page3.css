@@ -301,6 +301,11 @@ html, body {
 
 .about h1 {
     align-self: center;
+    font-size: 2.5em;
+    background: linear-gradient(90deg, #6e6e96, #565555);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .about {
