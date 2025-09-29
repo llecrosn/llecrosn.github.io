@@ -112,7 +112,8 @@
             <div class="blob blob3"></div>
         </div>
         <h1>Quelques chiffres</h1>
-        <div class="engagements">
+        <p>Scaleway sert à des entreprises gérant des domaines divers et variés</p>
+        <!-- <div class="engagements">
             <div class="engagement">
                 <div class="aboutTitle">
                     <img src="assets/page3/woman.svg" alt="Femme" class="icon">
@@ -137,6 +138,20 @@
                 <p>Scaleway a recu un index Egapro de <span style="color: var(--secondary-color);">91/100</span> en 2023</p>
                 <p>Soit trois points au dessus de la moyenne nationale</p>
             </div>
+        </div> -->
+        <div class="piecharts">
+            
+            <div class="chart-container">
+                <div class="chart-box">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+            
+            <div class="chart-container">
+                <div class="chart-box">
+                    <canvas id="clientShare"></canvas>
+                </div>
+            </div>
         </div>
         <br>
         <p>.</p>
@@ -149,8 +164,82 @@
         </div>
     </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="scripts/page3.js"></script>
     <script src="scripts/page2.js"></script>
+
+    <script>
+        const ctx = document.getElementById('myChart');
+
+        new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: [
+                    'Services professionnels (21,5 %)',
+                    'Services bancaires et financiers (16,1 %)',
+                    'Industrie manufacturière (13,0 %)',
+                    'Distribution (8,3 %)',
+                    'Autres (27,1 %)'
+                ],
+                datasets: [{
+                    label: '%',
+                    data: [21.5, 16.1, 13.0, 8.3, 27.1],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: true
+                    },
+                    title: {
+                        display: true,
+                        text: 'Répartition des clients de Scaleway par secteur',
+                        padding: { top: 10, bottom: 30 }
+                    }
+                }
+            }
+        });
+
+
+        const ctx2 = document.getElementById('clientShare');
+
+        new Chart(ctx2, {
+            type: 'pie',
+            data: {
+                labels: [
+                    'États-Unis (42,2 %)',
+                    'France (20,5 %)',
+                    'Espagne (6,8 %)',
+                    'Allemagne (5,3 %)',
+                    'Autres (11,1 %)'
+                ],
+                datasets: [{
+                    label: '%',
+                    data: [42.2, 20.5, 6.8, 5.3, 11.1],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: true
+                    },
+                    title: {
+                        display: true,
+                        text: 'Répartition des clients de Scaleway par pays',
+                        padding: { top: 10, bottom: 30 }
+                    }
+                }
+            }
+        });
+
+    </script>
+
 
 </body>
 </html>
