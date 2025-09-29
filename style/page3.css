@@ -346,6 +346,21 @@ html, body {
     background: #2e79dc;
     left: 40%; top: 60%;
 }
+.blob4 {
+    width: 350px; height: 350px;
+    background: #2e79dc;
+    left: 10%; top: 60%;
+}
+.blob5 {
+    width: 350px; height: 350px;
+    background: #e2e044;
+    left: 70%; top: 30%;
+}
+.blob6 {
+    width: 350px; height: 350px;
+    background: #d644cf;
+    left: 80%; top: 70%;
+}
 .about > *:not(.parallax-blobs) {
     position: relative;
     z-index: 2;
