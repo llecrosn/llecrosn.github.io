@@ -38,12 +38,12 @@ h2{
 h1{
     font-size: 50px;
     margin: 10vh auto;
-    font-style: monserrat, sans-serif;
+    /* font-style: monserrat, sans-serif;
     width: max-content;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 1.5s steps(36) 1 backwards;
+    animation: typing 1.5s steps(36) 1 backwards; */
 }
 
 @keyframes typing {
