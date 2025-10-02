@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
             card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.03)`;
         });
 
-        // resets when leavin
+        // ca reset
         card.addEventListener('mouseleave', () => {
             card.style.transform = 'rotateX(0deg) rotateY(0deg) scale(1)';
         });

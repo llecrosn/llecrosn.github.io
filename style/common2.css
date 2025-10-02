@@ -42,7 +42,6 @@
 .menu-visible ul li {
     list-style: none;
     margin-top: 8px;
-    background-color: #a284aea5;
     text-align: center;
     border-radius: 8px;
     padding: 5px 10px;
@@ -58,8 +57,17 @@
 }
 
 .menu-visible ul li a:hover {
-    background: var(--tertiary-color);
     border-radius: 15px;
+}
+
+.menu-visible ul li {
+    background-color: #a284aea5;
+    transition: background-color 0.3s;
+}
+
+.menu-visible ul li:hover {
+    background-color: #522a63a5;
+
 }
 
 .LogImg {
