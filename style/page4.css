@@ -29,12 +29,14 @@ main {
 }
 h2{
     margin-top: 12px;
+    margin-bottom: 12px;
+    
     
 }
 
 
 h1{
-    font-size: 80px;
+    font-size: 50px;
     margin: 10vh auto;
     font-style: monserrat, sans-serif;
     width: max-content;
@@ -61,20 +63,20 @@ h1{
     overflow: hidden;
 }
 .glass-card {
-  width: 50%;
-  height: 200px;
-  border-top: 2px solid #FFFFFF75;
-  border-left: 2px solid #FFFFFF75;
-  box-shadow: 5px 5px 12px #00000035;
-  background: #ffffff25;
-  border-radius: 15px;
-  overflow: hidden;
-  backdrop-filter: blur(4px);
-  position: absolute;
-  text-align: center;
-  font-size: 40px;
-  color: black;
-  text-shadow: 1px 1px 2px #000000;
+    width: 50%;
+    height: fit-content;
+    border-top: 2px solid #FFFFFF75;
+    border-left: 2px solid #FFFFFF75;
+    box-shadow: 5px 5px 12px #00000035;
+    background: #ffffff25;
+    border-radius: 15px;
+    overflow: hidden;
+    backdrop-filter: blur(4px);
+    position: absolute;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    text-shadow: 1px 1px 2px #000000;
 }
 .imgsize{
     width: 100%;
