@@ -40,9 +40,8 @@ h1{
     margin: 10vh auto;
     font-style: monserrat, sans-serif;
     text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typing 1.5s steps(36) 1 backwards;
+    /* white-space: nowrap;
+    animation: typing 1.5s steps(36) 1 backwards; */
 }
 
 @keyframes typing {
