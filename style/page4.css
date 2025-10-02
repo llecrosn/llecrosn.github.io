@@ -121,7 +121,7 @@ h1{
     position: relative;
     transform-style: preserve-3d;
     animation: rotateX(0deg) rotateY(0deg);
-    transition: transform 0.1s;
+    transition: transform 0.3s;
     user-select: none;
 }
 .piramid div {
@@ -155,6 +155,16 @@ h1{
 .base-card {
     transform: rotateY(90deg) translateZ(150px);
     background: rgba(255, 200, 0);
+    color: white;
+}
+.top-card {
+    transform: rotateX(90deg) translateZ(150px);
+    background: rgba(200, 0, 255);
+    color: white;   
+}
+.bottom-card {
+    transform: rotateX(-90deg) translateZ(150px);
+    background: rgba(0, 150, 255);
     color: white;
 }
 
