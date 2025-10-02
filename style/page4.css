@@ -5,7 +5,10 @@
     padding: 0;
     margin: 0;
 }
-
+@font-face {
+    font-family: "Montserrat";
+    src: url("../assets/font/Montserrat.ttf");
+}
 /* Reset de base*/
 * {
     margin: 0;
@@ -36,12 +39,16 @@ h2{
 
 
 h1{
-    font-size: 80px;
-    margin: 10vh auto;
-    font-style: monserrat, sans-serif;
+    font-size: 8vh;
+    width: fit-content;
+    margin-top: 80px;
     text-align: center;
-    /* white-space: nowrap;
-    animation: typing 1.5s steps(36) 1 backwards; */
+    font-family: 'Montserrat';
+    font-weight: 500;
+    text-wrap: nowrap;
+    overflow: hidden;
+    animation: typing 1.5s steps(15) forwards ;
+    
 }
 @keyframes typing {
     from { width: 0%}
@@ -88,6 +95,10 @@ h1{
     font-size: 40px;
     color: black;
     text-shadow: 1px 1px 2px #000000;
+}
+.glass-card h2 {
+    color: #111111;
+    font-family: 'Montserrat';
 }
 .imgsize{
     width: 100%;
