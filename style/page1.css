@@ -8,7 +8,7 @@
     --bright-blue: #2E79DC;
     --text-color: #F0F0F0;
     --text-color2 : #2E79DC;
-    --background-color: #d9d9f3;
+    --background-color: #fff;
 
     /* Variables pour le cube 3D */
     --cube-size: 220px; 
@@ -287,9 +287,151 @@ footer {
 }
 
 /* Couleurs des faces */
-.cube .front  { background: #ef4444; transform: translateZ(var(--cube-half)); }
-.cube .back   { background: #3b82f6; transform: rotateY(180deg) translateZ(var(--cube-half)); }
-.cube .right  { background: #10b981; transform: rotateY(90deg) translateZ(var(--cube-half)); }
-.cube .left   { background: #f59e0b; transform: rotateY(-90deg) translateZ(var(--cube-half)); }
-.cube .top    { background: #8b5cf6; transform: rotateX(90deg) translateZ(var(--cube-half)); }
-.cube .bottom { background: #ec4899; transform: rotateX(-90deg) translateZ(var(--cube-half)); }
+.cube .front  { background: var(--bright-blue); transform: translateZ(var(--cube-half)); }
+.cube .back   { background: var(--light-purple); transform: rotateY(180deg) translateZ(var(--cube-half)); }
+.cube .right  { background: var(--bright-yellow); transform: rotateY(90deg) translateZ(var(--cube-half)); }
+.cube .left   { background: var(--dark-purple); transform: rotateY(-90deg) translateZ(var(--cube-half)); }
+.cube .top    { background: var(--bright-yellow); transform: rotateX(90deg) translateZ(var(--cube-half)); }
+.cube .bottom { background: var(--light-purple); transform: rotateX(-90deg) translateZ(var(--cube-half)); }
+
+
+/* ======================
+   CARROUSEL 3D
+====================== */
+.carousel-section {
+    margin: 80px auto;
+    text-align: center;
+}
+
+.carousel-section h2 {
+    font-size: 2.5rem;
+    color: var(--text-color2);
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.carousel {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotateCarousel 20s linear infinite;
+}
+
+.carousel:hover {
+  animation-play-state: paused; /* plus long = rotation plus lente */
+}
+
+
+.carousel figure {
+    margin: 0;
+    position: absolute;
+    width: 280px;
+    height: 180px;
+    left: 10px;
+    top: 60px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+.carousel figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Positionnement des 6 faces autour d’un cercle */
+.carousel figure:nth-child(1) { transform: rotateY(0deg) translateZ(400px); }
+.carousel figure:nth-child(2) { transform: rotateY(60deg) translateZ(400px); }
+.carousel figure:nth-child(3) { transform: rotateY(120deg) translateZ(400px); }
+.carousel figure:nth-child(4) { transform: rotateY(180deg) translateZ(400px); }
+.carousel figure:nth-child(5) { transform: rotateY(240deg) translateZ(400px); }
+.carousel figure:nth-child(6) { transform: rotateY(300deg) translateZ(400px); }
+
+@keyframes rotateCarousel {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(-360deg); }
+}
+
+/* ======================
+   EUROPE MAP 3D
+====================== */
+.map-section {
+    margin: 80px auto;
+    text-align: center;
+}
+
+.map-section h2 {
+    font-size: 2rem;
+    color: var(--text-color2);
+    margin-bottom: 20px;
+}
+
+.europe-map {
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    perspective: 800px;
+    transform-style: preserve-3d;
+    animation: mapRotate 12s linear infinite;
+}
+
+.europe-map img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: rotateY(0deg) translateZ(50px);
+    backface-visibility: hidden;
+}
+
+@keyframes mapRotate {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(360deg); }
+}
+
+/* ======================
+   TERRE 3D
+====================== */
+.earth-section {
+    margin: 80px auto;
+    text-align: center;
+}
+
+.earth-section h2 {
+    font-size: 2rem;
+    color: var(--text-color2);
+    margin-bottom: 20px;
+}
+
+.earth {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #2E79DC 50%, #10b981 50%);
+    background-size: 200% 100%;
+    animation: spinEarth 15s linear infinite, shiftColors 6s ease-in-out infinite alternate;
+    box-shadow: inset -20px 0 50px rgba(0,0,0,0.5), 
+                0 0 30px rgba(0,0,0,0.6);
+}
+
+/* Rotation */
+@keyframes spinEarth {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+/* Changement de couleurs */
+@keyframes shiftColors {
+    0%   { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+@keyframes spinEarth {
+    from { background-position: 0 0; }
+    to { background-position: -800px 0; }
+}
+
