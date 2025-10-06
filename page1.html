@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="style/page1.css">
     <link rel="preconnect" href="https.fonts.googleapis.com">
-     <link rel="stylesheet" href="style/common2.css">
+    <link rel="stylesheet" href="style/common2.css">
     <link rel="preconnect" href="https.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <title>Scaleway - Notre Histoire</title>
@@ -15,18 +15,17 @@
 <body>
 
     <div class="navbar">
-    <img src="assets/FS-AFFI-00315Scaleway.png" alt="Logo" class="LogImg" id="logo">
+        <img src="assets/FS-AFFI-00315Scaleway.png" alt="Logo" class="LogImg" id="logo">
 
-
-  <nav id="menu" class="menu-hidden">
-    <ul>
-       <li><a href="index.html">Accueuil</a></li>
-        <li><a href="page2.html">Economie</a></li>
-        <li><a href="page3.html">Equipe</a></li>
-        <li><a href="page4.html">Ecologie</a></li>
-        <li><a href="page5.html">Clients</a></li>
-    </ul>
-  </nav>
+        <nav id="menu" class="menu-hidden">
+            <ul>
+                <li><a href="index.html">Accueuil</a></li>
+                <li><a href="page2.html">Economie</a></li>
+                <li><a href="page3.html">Equipe</a></li>
+                <li><a href="page4.html">Ecologie</a></li>
+                <li><a href="page5.html">Clients</a></li>
+            </ul>
+        </nav>
     </div>
 
     <div class="page-container">
@@ -35,21 +34,50 @@
             <p class="subtitle">De l'idée audacieuse à un acteur majeur du cloud européen</p>
         </header>
         <div class="header-image">
-        <img src="assets/page1/entreprise_vue.webp" alt="Bureaux Scaleway">
+            <img src="assets/page1/entreprise_vue.webp" alt="Bureaux Scaleway">
         </div>
 
+        <!-- Cube 3D -->
         <div class="scene">
             <div class="cube" id="cube">
-            <div class="face front">Fondée en 1999</div>
-            <div class="face back">Passage au Cloud</div>
-            <div class="face right">Serveurs ARM</div>
-            <div class="face left">Expansion en Europe</div>
-            <div class="face top">Certification ISO</div>
-            <div class="face bottom">Open Source</div>
+                <div class="face front">Fondée en 1999</div>
+                <div class="face back">Passage au Cloud</div>
+                <div class="face right">Serveurs ARM</div>
+                <div class="face left">Expansion en Europe</div>
+                <div class="face top">Certification ISO</div>
+                <div class="face bottom">Open Source</div>
+            </div>
         </div>
-    </div>
 
+        <!-- Carrousel 3D -->
+        <section class="carousel-section">
+            <h2>Moments de Scaleway en images</h2>
+            <div class="carousel">
+                <figure><img src="assets/page1/entreprise_vue.webp" alt="Scaleway 1"></figure>
+                <figure><img src="assets/page1/entreprise_vue1.webp" alt="Scaleway 2"></figure>
+                <figure><img src="assets/page1/entreprise_vue2.jpg" alt="Scaleway 3"></figure>
+                <figure><img src="assets/page1/entreprise_vue3.jpg" alt="Scaleway 4"></figure>
+                <figure><img src="assets/page1/entreprise_vue4.webp" alt="Scaleway 5"></figure>
+                <figure><img src="assets/page1/entreprise_vue5.png" alt="Scaleway 6"></figure>
+            </div>
+        </section>
 
+        <!-- Carte Europe 3D --> 
+         <section class="map-section"> 
+            <h2>L’Europe au cœur de notre histoire</h2> 
+            <div class="europe-map"> 
+            <img src="assets/page1/europe_map.svg" alt="Carte Europe 3D"> 
+            </div>
+         </section>
+
+         <!-- Terre 3D --> 
+          <section class="earth-section"> 
+            <h2>Une vision mondiale</h2> 
+            <div class="earth"></div> 
+            <img src="assets/page1/terre.jpg" alt="Terre en 3D"> 
+          </section>
+
+        <!-- Timeline -->
         <section class="timeline-section">
             <h2>Notre histoire en quelques dates clés</h2>
             <div class="timeline">
@@ -97,17 +125,14 @@
                 </div>
             </div>
         </section>
-        <div class="more-info">
-    <a href="https://www.scaleway.com/fr/" target="_blank" class="btn-more">En savoir plus</a>
-</div>
 
+        <div class="more-info">
+            <a href="https://www.scaleway.com/fr/" target="_blank" class="btn-more">En savoir plus</a>
+        </div>
     </div>
     
-
     <footer>
-        <p>
-            Lecoq Brian - SAE BUT 1 Informatique
-        </p>
+        <p>Lecoq Brian - SAE BUT 1 Informatique</p>
     </footer>
     
     <script src="scripts/page1.js"></script>
