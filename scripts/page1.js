@@ -85,3 +85,34 @@ window.addEventListener("mouseup", () => {
   isDragging = false;
   cube.style.cursor = "grab";
 });
+
+// terre 3D
+const earth = document.querySelector('.earth');
+if (earth) {
+  earth.addEventListener('mouseenter', () => {
+    earth.style.animationDuration = "8s"; // accélère la rotation
+  });
+  earth.addEventListener('mouseleave', () => {
+    earth.style.animationDuration = "15s"; // revient normal
+  });
+}
+
+// carrousel 3D
+const carousel = document.querySelector('.carousel');
+if (carousel) {
+  let isPaused = false;
+  let angle = 0;
+
+  function rotateCarousel() {
+    if (!isPaused) {
+      angle += 0.2; // vitesse
+      carousel.style.transform = `rotateY(${angle}deg)`;
+    }
+    requestAnimationFrame(rotateCarousel);
+  }
+  rotateCarousel();
+
+  carousel.addEventListener('mouseenter', () => isPaused = true);
+  carousel.addEventListener('mouseleave', () => isPaused = false);
+}
+
