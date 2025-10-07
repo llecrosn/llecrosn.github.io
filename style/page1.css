@@ -212,7 +212,27 @@ footer {
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-.btn-more:hover {
+.btn-more:hover {style
+	
+ajout du style pour les elements 3d
+	
+18 hours ago
+Page 7.html
+	
+Dépot de la page 7
+	
+5 days ago
+README.md
+	
+ajout de la presentation du projet oublier lors du rendu du livrable 1
+	
+2 days ago
+index.html
+	
+ajout de style page3
+	
+2 weeks ago
+
     background: var(--bright-yellow);
     color: var(--dark-purple);
     transform: translateY(-3px);
@@ -259,6 +279,7 @@ footer {
     align-items: center;
     justify-content: center;
     cursor: grab; /* Indique que le cube est draggable avec la souris */
+    margin-left: 40%;
 }
 
 /* Cube lui-même */
