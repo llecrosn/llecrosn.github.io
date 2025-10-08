@@ -1,49 +1,69 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+
+    <!-- ======================
+         FEUILLES DE STYLE
+    ====================== -->
     <link rel="stylesheet" href="style/common.css">
     <link rel="stylesheet" href="style/index.css">
-    
     <link rel="icon" type="image/vnd.icon" href="assets/favicon.ico">
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>Accueil</title>
-    
-  </head>
-<body>
 
+    <!-- ======================
+         POLICES GOOGLE
+    ====================== -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
 
-      <div class="navbar">
+<body class="home-page">
+    <!-- ======================
+         BARRE DE NAVIGATION
+         (inchangée, reliée à common.css)
+    ====================== -->
+    <div class="navbar">
+        <ul>
+            <li class="navbutton"><a href="index.html">Accueil</a></li>
+            <li class="navbutton"><a href="page1.html">Histoire</a></li>
+            <li class="navbutton"><a href="page2.html">Economie</a></li>
+            <li class="navbutton"><a href="page3.html">Equipe</a></li>
+            <li class="navbutton"><a href="page4.html">Ecologie</a></li>
+            <li class="navbutton"><a href="page5.html">Clients</a></li>
+        </ul>
+    </div>
 
-            <ul>
-                <li class="navbutton"><a href="index.html">Accueil</a></li>
-                <li class="navbutton"><a href="page1.html">Histoire</a></li>
-                <li class="navbutton"><a href="page2.html">Economie</a></li>
-                <li class="navbutton"><a href="page3.html">Equipe</a></li>
-                <li class="navbutton"><a href="page4.html">Ecologie</a></li>
-                <li class="navbutton"><a href="page5.html">page 5</a></li>
-            </ul>
-            
+    <!-- ======================
+         SECTION PRINCIPALE (HERO)
+    ====================== -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="title-3d">
+                <span>Scaleway, le cloud</span><br>
+                <span class="accent">qui a du sens</span>
+            </h1>
+            <p class="subtitle">Innovation, durabilité et performance à la française</p>
         </div>
 
-        <section class="Displayer1" id="Firstpage">
-                
-                <H1 class="MainTitle"><span><br>Scaleway, the cloud <br/> that makes</span><span style="color: rgb(47, 47, 250);"> sense</span> </H1>
-        </section>
+        <!-- Éléments décoratifs flottants -->
+        <div class="floating-cubes">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+        </div>
+    </section>
 
-        <footer class="FooterMain">
-                <h1 class="FooterTextTest">ceci est un texte</h1>
-                <!-- add several images here -->
-        </footer>
+    <!-- ======================
+         PIED DE PAGE
+    ====================== -->
+    <footer class="FooterMain">
+        <p class="FooterText">© 2025 Scaleway — Le cloud éthique et européen</p>
+    </footer>
 
-        <script src="scripts/parallax.js"/>
+    <!-- ======================
+         SCRIPT EXTERNE
+    ====================== -->
+    <script src="scripts/index.js"></script>
 </body>
 </html>
-
-
-
-
-
