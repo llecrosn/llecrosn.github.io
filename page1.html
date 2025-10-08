@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style/common2.css">
     <link rel="preconnect" href="https.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
     <title>Scaleway - Notre Histoire</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
 
         <nav id="menu" class="menu-hidden">
             <ul>
-                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="index.html">Accueuil</a></li>
                 <li><a href="page2.html">Economie</a></li>
                 <li><a href="page3.html">Equipe</a></li>
                 <li><a href="page4.html">Ecologie</a></li>
@@ -38,23 +39,37 @@
         </div>
 
         <!-- Cube 3D -->
+        <section class="cube-history">
         <div class="scene">
-            <div class="cube" id="cube">
-                <div class="face front">Fondée en 1999</div>
-                <div class="face back">Passage au Cloud</div>
-                <div class="face right">Serveurs ARM</div>
-                <div class="face left">Expansion en Europe</div>
-                <div class="face top">Certification ISO</div>
-                <div class="face bottom">Open Source</div>
-            </div>
+        <div class="cube" id="cube">
+            <div class="face front">Fondée en 1999</div>
+            <div class="face back">Innovation continue</div>
+            <div class="face right">Cloud éthique</div>
+            <div class="face left">Expansion en Europe</div>
+            <div class="face top">Croissance rapide</div>
+            <div class="face bottom">Engagement durable</div>
         </div>
+    </div>
+
+    <div class="history-text">
+        <h2>Une histoire d’innovation</h2>
+        <p>
+            Depuis ses débuts en 1999 sous le nom d’Online.net, Scaleway n’a cessé d’évoluer.
+            L’entreprise a su anticiper les révolutions technologiques pour devenir un acteur
+            majeur du cloud européen, alliant performance, éthique et souveraineté numérique.
+        </p>
+    </div>
+    </section>
+
+
+
 
         <!-- Carrousel 3D -->
         <section class="carousel-section">
             <h2>Moments de Scaleway en images</h2>
             <div class="carousel">
                 <figure><img src="assets/page1/entreprise_vue.webp" alt="Scaleway 1"></figure>
-                <figure><img src="assets/page1/entreprise_vue1.webp" alt="Scaleway 2"></figure>
+                <figure><img src="assets/page1/entreprise_vue1.jpg" alt="Scaleway 2"></figure>
                 <figure><img src="assets/page1/entreprise_vue2.jpg" alt="Scaleway 3"></figure>
                 <figure><img src="assets/page1/entreprise_vue3.jpg" alt="Scaleway 4"></figure>
                 <figure><img src="assets/page1/entreprise_vue4.webp" alt="Scaleway 5"></figure>
@@ -73,7 +88,8 @@
          <!-- Terre 3D --> 
           <section class="earth-section"> 
             <h2>Une vision mondiale</h2> 
-            <div class="earth"></div>  
+            <div class="earth"></div> 
+            <img src="assets/page1/terre.jpg" alt="Terre en 3D"> 
           </section>
 
         <!-- Timeline -->
@@ -124,16 +140,23 @@
                 </div>
             </div>
         </section>
-
-        <div class="more-info">
-            <a href="https://www.scaleway.com/fr/" target="_blank" class="btn-more">En savoir plus</a>
-        </div>
     </div>
     
     <footer>
-        <p>Lecoq Brian - SAE BUT 1 Informatique</p>
+    <div class="footer-content">
+        <div class="footer-left">
+            <h3>Contact Scaleway</h3>
+            <p>Email : <a href="mailto:support@scaleway.com">support@scaleway.com</a></p>
+            <p>Téléphone : +33 1 84 13 00 00</p>
+            <p>Adresse : 8 rue de la Ville-l'Évêque, 75008 Paris, France</p>
+        </div>
+
+        <div class="footer-right">
+            <a href="https://www.scaleway.com/fr/" target="_blank" class="btn-more">En savoir plus</a>
+        </div>
+    </div>
+    <p class="footer-note">Lecoq Brian - SAE BUT 1 Informatique</p>
     </footer>
-    
     <script src="scripts/page1.js"></script>
     <script src="scripts/page2.js"></script>
 </body>
