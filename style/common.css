@@ -48,6 +48,30 @@
     z-index: 10;
     
 }
+/* ======================
+   ALIGNEMENT DE LA NAVBAR
+====================== */
+
+/* On force la navbar à répartir les éléments */
+.navbar ul {
+    display: flex;
+    justify-content: space-between; /* Espace entre Accueil et les autres */
+    align-items: center;
+    width: 90%; /* Ajuste la largeur si besoin */
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* On place le premier élément (Accueil) complètement à gauche */
+.navbar ul li:first-child {
+    margin-right: auto;
+}
+
+/* Les autres restent groupés à droite */
+.navbar ul li:not(:first-child) {
+    margin-left: 2vw;
+}
+
 
 @media all and (max-width: 560px) {
     .navbar ul li{
