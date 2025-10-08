@@ -20,9 +20,7 @@ html {
     scroll-behavior: smooth;
 }
 
-@media all and (max-width: 560px) {
 
-}
 main {
     width: 100%;
     height: 500vh;
@@ -31,8 +29,7 @@ main {
 
 }
 h2{
-    margin-top: 12px;
-    margin-bottom: 12px;
+    text-align: center;
     
     
 }
@@ -42,11 +39,8 @@ h1{
     font-size: 8vh;
     width: fit-content;
     margin-top: 80px;
-    text-align: center;
     font-family: 'Montserrat';
-    font-weight: 500;
-    overflow: hidden;
-    animation: typing 1.5s steps(15) forwards ;
+    font-weight: 500px
     
 }
 @keyframes typing {
@@ -66,14 +60,12 @@ h1{
 }
 .firstblock{
     height: 40vh;
-    background: linear-gradient(45deg, #9e9ef7, #A284AE);
-    animation: gradient 9s ease infinite;
-     background-size: 400% 400%;
+  
 }
 
 
 .secondblock{
-    height: 50vh;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,33 +97,35 @@ h1{
     object-fit: cover;
     filter: brightness(0.6)}
 
-/*piramide*/
+/*rectangle*/
 .container {
-    width: 300px;
-    height: 300px;
-    perspective: 1000px;
+    width: 600px;
+    height: 1000px;
+    perspective: 2000px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    
     margin: auto;
 }
-.piramid{
+
+
+.cube{
     width: 100%;
     height: 100%;
     position: relative;
     transform-style: preserve-3d;
-    animation: rotateX(0deg) rotateY(0deg);
+    animation:rotateY(0deg);
     transition: transform 0.3s;
     user-select: none;
 }
-.piramid div {
+.cube div {
     height: 100%;
     width: 100%;
     position: absolute;
-    display: flex;
+
     align-items: center;
     justify-content: center;
-    text-align: center;
+  
     text-wrap: wrap;
     overflow: hidden;
     font-size: 20px;
@@ -140,36 +134,25 @@ h1{
 
 /*face*/
 .front-card {
-    transform: rotateY(0deg) translateZ(150px);
+    transform: rotateY(0deg) translateZ(300px);
     background: rgba(255, 0, 150);
     color: white;
 }
 .back-card {
-    transform: rotateY(180deg) translateZ(150px);
+    transform: rotateY(180deg) translateZ(300px);
     background: rgba(0, 200, 255);
     color: white;
 }
 .left-card {
-    transform: rotateY(-90deg) translateZ(150px);
+    transform: rotateY(-90deg) translateZ(300px);
     background: rgba(0, 255, 150);
     color: white;
 }
 .base-card {
-    transform: rotateY(90deg) translateZ(150px);
+    transform: rotateY(90deg) translateZ(300px);
     background: rgba(255, 200, 0);
     color: white;
 }
-.top-card {
-    transform: rotateX(90deg) translateZ(150px);
-    background: rgba(200, 0, 255);
-    color: white;   
-}
-.bottom-card {
-    transform: rotateX(-90deg) translateZ(150px);
-    background: rgba(0, 150, 255);
-    color: white;
-}
-
 
 
 @keyframes rotate {
@@ -177,7 +160,9 @@ h1{
     to { transform: rotateX(360deg) rotateY(360deg); }
 }
 
-
+.thirdblock h2{
+    margin: 120px
+}
 
 
 
@@ -194,3 +179,4 @@ footer{
     padding-top: 40px;
     font-size: 20px;
 }
+
