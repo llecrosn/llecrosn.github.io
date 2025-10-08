@@ -39,9 +39,10 @@ html, body {
 
     padding: 80px 20px;
     max-height: 15vh;
-    background: linear-gradient(-45deg, var(--background-color), var(--background-color-second));
-    background-size: 400% 400%;
-    animation: gradient 9s ease infinite;
+    /* background: linear-gradient(-45deg, var(--background-color), var(--background-color-second)); */
+    /* background-size: 400% 400%; */
+    /* animation: gradient 9s ease infinite; */
+    background-color: var(--background-color);
 }
 
 @keyframes gradient {
@@ -87,8 +88,8 @@ html, body {
 
 .divider {
     height: 8px;
-    background-color: rgb(73, 39, 132);
-    background: linear-gradient(90deg, rgb(73, 39, 132), rgb(44, 19, 65));
+    background-color: var(--main-color);
+    /* background: linear-gradient(90deg, rgb(73, 39, 132), rgb(44, 19, 65)); */
     padding: 0;
     margin: 0;
 }
@@ -102,7 +103,8 @@ html, body {
 .subheader {
     min-height: 70vh;
     padding: 40px 0;
-    background: linear-gradient(90deg, rgb(234, 172, 237), rgb(212, 212, 244));
+    background-color: var(--accent-color);
+    /* background: linear-gradient(90deg, rgb(234, 172, 237), rgb(212, 212, 244)); */
     margin: 0;
     color: #3d3131; 
     height: auto;
@@ -364,10 +366,7 @@ html, body {
 .about h1 {
     align-self: center;
     font-size: 2.5em;
-    background: linear-gradient(90deg, #6e6e96, #565555);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: var(--main-color);
 }
 .about p {
     font-size: 1.2em;

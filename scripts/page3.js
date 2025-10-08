@@ -86,49 +86,20 @@ document.addEventListener("DOMContentLoaded", function() {
         animate();
     });
 
-    let mouseActive = false;
-    let lastMouseTime = Date.now();
-
-    document.addEventListener('mousemove', function(e) {
-        const about = document.querySelector('.about');
-        const blobs = document.querySelectorAll('.parallax-blobs .blob');
-        if (!about || blobs.length === 0) return;
-
-        const rect = about.getBoundingClientRect();
-        const mouseX = e.clientX - rect.left;
-        const mouseY = e.clientY - rect.top;
-
-        const x = ((mouseX / rect.width) - 0.5) * 2;
-        const y = ((mouseY / rect.height) - 0.5) * 2;
-
-        idleX = x;
-        idleY = y;
-        mouseActive = true;
-        lastMouseTime = Date.now();
-
-        blobs.forEach((blob, i) => {
-            const speed = (i + 1) + 50;
-            const dir = i % 2 === 0 ? 1 : -1;
-            blob.style.transform = `translate(${x * speed * dir}px, ${y * speed}px)`;
-        });
-    });
-
     function animateBlobsIdle() {
         const about = document.querySelector('.about');
         const blobs = document.querySelectorAll('.parallax-blobs .blob');
+        // check si on a bel et bien des blobs dans la page
         if (!about || blobs.length === 0) return;
-
-        if (!mouseActive || Date.now() - lastMouseTime > 1000) {
-            mouseActive = false;
-            const t = Date.now() * 0.001;
-            blobs.forEach((blob, i) => {
-                const speed = (i + 1) * 30 + 20;
-                const dir = i % 2 === 0 ? 1 : -1;
-                const idleOffsetX = Math.sin(t + i) * 0.5;
-                const idleOffsetY = Math.cos(t + i * 1.5) * 0.5;
-                blob.style.transform = `translate(${idleOffsetX * speed * dir}px, ${idleOffsetY * speed}px)`;
-            });
-        }
+        
+        const t = Date.now() * 0.001;
+        blobs.forEach((blob, i) => {
+            const speed = (i + 1) * 30 + 20;
+            const dir = i % 2 === 0 ? 1 : -1;
+            const idleOffsetX = Math.sin(t + i) * 0.5;
+            const idleOffsetY = Math.cos(t + i * 1.5) * 0.5;
+            blob.style.transform = `translate(${idleOffsetX * speed * dir}px, ${idleOffsetY * speed}px)`;
+        });
         requestAnimationFrame(animateBlobsIdle);
     }
     animateBlobsIdle();
