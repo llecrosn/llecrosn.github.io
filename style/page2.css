@@ -70,12 +70,6 @@ body {
 
 }
 
-.menu-visible ul li a:hover {
-    background: var(--tertiary-color);
-    border-radius: 15px;
-}
-
-
 .LogImg {
   width: 60px;
   height: 60px;
