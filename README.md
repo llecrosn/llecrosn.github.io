@@ -31,7 +31,7 @@ Vérification W3C : [Détail ICI](https://)
 
 **Auteur : Lecoq Brian**  
 
-Verification W3C : [Détail ICI](https://)
+Verification W3C : [Détail ICI](https://https://validator.w3.org/nu/?doc=https%3A%2F%2Fllecrosn.github.io%2Fpage1.html)
 ![capture d'écran de la conformité de la page ...](doc/capture_2_W3C.png)
 
 ![capture d'écran sur le site https://www.ecoindex.fr/ pour tester l'eco-conception](doc/capture_2_ecoconcept.png)
