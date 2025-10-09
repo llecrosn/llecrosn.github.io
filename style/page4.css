@@ -175,7 +175,7 @@ h1 {
     padding: 20px;
     background: #fff;
     border-radius: 18px;
-    box-shadow: 0 4px 24px rgba(44, 19, 65, 0.12);
+    box-shadow: 0 4px 24px black;
 }
 .chart-box {
   width: 350px;
