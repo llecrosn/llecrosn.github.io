@@ -135,7 +135,7 @@ html, body {
 .side-info:hover,
 .member:hover {
     transform: translateY(-4px) scale(1.02);
-    box-shadow: 0 8px 32px rgba(44, 19, 65, 0.18);
+    box-shadow: 0 8px 32px rgba(44, 19, 65, 0.68);
 }
 .memberText {
     display: flex;
@@ -182,7 +182,7 @@ html, body {
 .resume.highlight {
     background: #fff;
     border-radius: 18px;
-    box-shadow: 0 2px 16px rgba(44, 19, 65, 0.10);
+    box-shadow: 0 2px 16px rgba(44, 19, 65, 0.1);
     padding: 24px 32px;
     margin-bottom: 24px;
     text-align: center;
@@ -384,6 +384,9 @@ html, body {
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
+
+    box-shadow: 0 8px 32px rgba(44, 19, 65, 0.05);
+    transition: box-shadow 0.2s ease-in;
 }
 
 .engagement {
@@ -407,8 +410,7 @@ html, body {
 
 .engagement:hover {
     /* transform: translateY(-4px) scale(1.02); */
-    box-shadow: 0 8px 32px rgba(44, 19, 65, 0.18);
-
+    box-shadow: 0 8px 32px rgba(44, 19, 65, 0.5);
     filter: brightness(1.15) saturate(1.3);
 }
 
