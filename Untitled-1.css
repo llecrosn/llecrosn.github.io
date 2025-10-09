@@ -1,0 +1,54 @@
+
+/* ======================
+   STYLES GÉNÉRAUX
+====================== */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* ======================
+   PAGE STRUCTURE
+====================== */
+.page-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    color: var(--text-color2);
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--light-purple);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.header-image {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+
+}
+
+
+/* Police des titres et textes */
+.history-text h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color2);
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.history-text p {
+    font-family: 'Noto Sans', sans-serif;
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+}
