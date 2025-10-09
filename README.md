@@ -10,3 +10,7 @@ Page github: [cliquez ici](https://llecrosn.github.io/)
 
 # Présentation du projet
 Ce dépôt contient un site web en HTML/CSS réalisé dans le cadre de la SAÉ 05-06 à l'IUT NFC. Il présente **Scaleway**, son histoire depuis ses débuts jusqu’à son positionnement actuel comme fournisseur européen de solutions cloud. Le site met en avant ses services comme les machines virtuelles, le stockage et Kubernetes, et explique **les avantages économiques** pour les entreprises. Il souligne également les engagements de l’entreprise en matière de **sécurité, de souveraineté des données et de durabilité.** Des pages spécifiques détaillent son parcours, ses offres et les bonnes pratiques pour les développeurs et les entreprises. Enfin, le site propose des liens vers les ressources officielles et les contacts de l’entreprise.
+
+## Choix de conception  
+
+Pour la conception du site, nous nous sommes grandement inspirés du site officiel de Microbe Explorer (disponible [ici](https://microbexplorer.com/)) et nous avons pris comme référence la charte de Scaleway disponible [ici](doc/charte_graphique.pdf).
