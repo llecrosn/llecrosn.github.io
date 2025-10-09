@@ -14,3 +14,85 @@ Ce dépôt contient un site web en HTML/CSS réalisé dans le cadre de la SAÉ 0
 ## Choix de conception  
 
 Pour la conception du site, nous nous sommes grandement inspirés du site officiel de Microbe Explorer (disponible [ici](https://microbexplorer.com/)) et nous avons pris comme référence la charte de Scaleway disponible [ici](doc/charte_graphique.pdf).
+
+## Développement Site Web et Validation des pages
+
+### Page d'accueil
+
+**Auteur : Lecoq Brian et Gossiaux--chopard-guillaumot Mathis**  
+
+Vérification W3C : [Détail ICI](https://)
+
+![capture d'écran de la conformité de la page ...](doc/capture_1_W3C.png)
+
+![capture d'écran sur le site https://www.ecoindex.fr/ pour tester l'eco-conception](doc/capture_1_ecoconcept.png)
+
+### Présentation générale
+
+**Auteur : Lecoq Brian**  
+
+Verification W3C : [Détail ICI](https://)
+![capture d'écran de la conformité de la page ...](doc/capture_2_W3C.png)
+
+![capture d'écran sur le site https://www.ecoindex.fr/ pour tester l'eco-conception](doc/capture_2_ecoconcept.png)
+
+**Auteur : Gossiaux--chopard-guillaumot Mathis**  
+
+Verification W3C : [Détail ICI](https://)
+![capture d'écran de la conformité de la page ...](doc/capture_3_W3C.png)
+
+![capture d'écran sur le site https://www.ecoindex.fr/ pour tester l'eco-conception](doc/capture_3_ecoconcept.png)
+
+**Auteur : Krakovinsky Leo**  
+
+Verification W3C : [Détail ICI](https://)
+![capture d'écran de la conformité de la page ...](doc/capture_4_W3C.png)
+![capture d'écran sur le site https://www.ecoindex.fr/ pour tester l'eco-conception](doc/capture_4_ecoconcept.png)
+
+**Auteur : Lecrosnier Landry**  
+
+Verification W3C : [Détail ICI](https://)
+![capture d'écran de la conformité de la page ...](doc/capture_5_W3C.png)
+
+![capture d'écran sur le site https://www.ecoindex.fr/ pour tester l'eco-conception](doc/capture_5_ecoconcept.png)
+**Auteur : Krakovinsky Leo**  
+
+Verification W3C : [Détail ICI](https://)
+![capture d'écran de la conformité de la page ...](doc/capture_6_W3C.png)
+
+![capture d'écran sur le site https://www.ecoindex.fr/ pour tester l'eco-conception](doc/capture_6_ecoconcept.png)
+
+
+## Répartition du travail
+
+### Planification - Diagramme de GANTT
+
+- Lecoq Brian
+
+
+### Recherches d'informations
+- Lecrosnier Landry
+- Krakovinsky Leo
+
+
+### Développement site
+
+- Lecoq Brian
+  - Page d’accueil
+- Gossiaux--chopard-guillaumot Mathis
+  - "Template" de page (Navbar/Footer)
+- Lecoq Brian
+  - Page histoire
+- Gossiaux--chopard-guillaumot Mathis
+  - Page économie
+- Krakovinsky Leo
+  - Page équipe
+- Lecrosnier Landry
+  - Page écologie
+- Krakovinsky Leo
+  - Page Clients
+
+## Contributeurs
+
+![capture d'écran de sur la contribution des membres du projet](doc/livrable2_contributors.png)
+
