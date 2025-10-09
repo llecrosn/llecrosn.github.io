@@ -13,7 +13,7 @@ const onMouseMove = (e) => {
     if (!isDragging) return;
     currentX = e.clientX - startX;
     currentY = e.clientY - startY;
-    cube.style.transform = `rotateY(${ currentX / 5 }deg)`;
+    cube.style.transform = `rotateY(${currentX / 5}deg)`;
 };
 const onMouseUp = () => {
     isDragging = false;
@@ -22,3 +22,4 @@ const onMouseUp = () => {
 cube.addEventListener('mousedown', onMouseDown);
 window.addEventListener('mousemove', onMouseMove);
 window.addEventListener('mouseup', onMouseUp);
+
