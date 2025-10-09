@@ -7,7 +7,7 @@
 
 .divider{
   height: 8px;
-    background-color: rgb(73, 39, 132);
+    background-color: var(--main-color);
     background: var(--main-color);
     padding: 0;
     margin: 0;
