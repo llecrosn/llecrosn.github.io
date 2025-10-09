@@ -84,3 +84,12 @@ window.addEventListener('resize', () => {
     canvas.height = window.innerHeight;
     init();
 });
+
+document.querySelectorAll('img').forEach(img => {
+  img.addEventListener('click', () => {
+    img.classList.toggle('zoomed');
+    
+  });
+});
+
+
