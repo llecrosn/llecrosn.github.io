@@ -28,7 +28,7 @@ class Particle {
     }
     // particle draw -> ne pas toucher sauf rgb
     draw() {
-        ctx.fillStyle = 'rgba(185, 73, 230, 0.8)'; 
+        ctx.fillStyle = 'rgba(210, 95, 255, 0.8)'; 
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
         ctx.fill();
@@ -55,7 +55,7 @@ function connectParticles() {
 
             if (distance < 100) {
                 opacityValue = 1 - (distance / 100);
-                ctx.strokeStyle = 'rgba(46, 121, 220,' + opacityValue + ')';
+                ctx.strokeStyle = 'rgba(255, 192, 56,' + opacityValue + ')';
                 ctx.lineWidth = 1;
                 ctx.beginPath();
                 ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
