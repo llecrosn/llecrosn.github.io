@@ -156,6 +156,11 @@ html, body {
     margin-left: 0;
     color: #444;
 }
+.memberText p + p {
+    font-size: 1.1em;
+    margin-left: 0;
+    color: #444;
+}
 
 .member p {
     margin-left: 2vh;
