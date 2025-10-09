@@ -55,6 +55,7 @@ Verification W3C : [Détail ICI](https://)
 ![capture d'écran de la conformité de la page ...](doc/capture_5_W3C.png)
 
 ![capture d'écran sur le site https://www.ecoindex.fr/ pour tester l'eco-conception](doc/capture_5_ecoconcept.png)
+
 **Auteur : Krakovinsky Leo**  
 
 Verification W3C : [Détail ICI](https://)
