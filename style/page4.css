@@ -43,8 +43,9 @@ main {
 .highlight {
     color: var(--secondary-color);
 }
-.fonce{
-    color:var(--main-color)
+
+.blue {
+    color: var(--tertiary-color)
 }
 
 .centrer {
@@ -113,16 +114,16 @@ h2 {
     box-shadow: 20px 15px 30px black;
 }
 
-.card-adia{
+.card-adia {
     border-radius: 20px;
     box-shadow: 10px 5px 20px black;
     width: 500px;
     height: 500px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-   overflow: hidden;
-   margin-top: 70px;
-   
+    overflow: hidden;
+    margin-top: 70px;
+
 }
 
 .card-adia:hover {
@@ -153,10 +154,10 @@ h2 {
     display: inline-block;
 }
 
-.aligne{
+.aligne {
     display: flex;
     gap: 200px;
-    
+
 }
 
 
@@ -326,62 +327,70 @@ h2 {
    image serveur de scaleway
 ====================================== */
 
-.enrouleur{
+.enrouleur {
     display: flex;
     width: 900px;
     height: 350px;
     overflow: hidden;
     border-radius: 20px;
     box-shadow: 0 4px 24px black;
-    
+
 }
 
-.imgcarde{
+.imgcarde {
     position: relative;
-    flex:1;
+    flex: 1;
     overflow: hidden;
     transition: flex 0.5s ease-in-out;
     cursor: pointer;
 }
-.imgcarde img{
+
+.imgcarde img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     filter: brightness(70%) contrast(90%);
     transition: filter 0.5s ease-in-out;
 }
-.imgcarde:hover{
-    flex:3
+
+.imgcarde:hover {
+    flex: 3
 }
-.imgcarde:hover img{
-    filter:none
+
+.imgcarde:hover img {
+    filter: none
 }
-.text-overlay{
+
+.text-overlay {
     position: absolute;
     bottom: 20px;
     left: 20px;
     right: 20px;
+    filter: brightness(1.5);
     z-index: 2;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
 
-.imgcarde:hover .text-overlay{
+.imgcarde:hover .text-overlay {
     opacity: 1;
 }
 
-.text-overlay h3{
+.text-overlay h3 {
     font-size: 30px;
     margin-bottom: 5px;
     font-weight: 600;
 }
-.text-overlay p{
+
+.text-overlay p {
     font-size: 20px;
     font-weight: 400;
 }
-.imgserveur{
+
+.imgserveur {
     display: flex;
-    justify-content: center; /* centre horizontalement */
-    align-items: center; 
+    justify-content: center;
+    /* centre horizontalement */
+    align-items: center;
     margin-top: 20px;
 }
