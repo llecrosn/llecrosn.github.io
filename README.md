@@ -51,7 +51,7 @@ Verification W3C : [Détail ICI](https://)
 
 **Auteur : Lecrosnier Landry**  
 
-Verification W3C : [Détail ICI](https://)
+Verification W3C : [Détail ICI](https://validator.w3.org/nu/?doc=https%3A%2F%2Fllecrosn.github.io%2Fpage4.html)
 ![capture d'écran de la conformité de la page ...](doc/capture_5_W3C.png)
 
 ![capture d'écran sur le site https://www.ecoindex.fr/ pour tester l'eco-conception](doc/capture_5_ecoconcept.png)
