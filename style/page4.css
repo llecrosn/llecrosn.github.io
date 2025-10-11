@@ -51,36 +51,111 @@ h2 {
 h1 {
     font-size: 8vh;
     width: fit-content;
-    margin-top: 80px;
     font-family: 'Montserrat';
-    font-weight: 500px
 }
 
 /* =================
 ||première section ||
 ================= */
 .firstblock {
-    height: 40vh;
+    height: 15vh;
     display: flex;
-    align-items: center;
+    padding-top: 4%;
     justify-content: center;
-    
+
 }
+
 /* ===================
 ||   seconde section ||
 ==================== */
 
 .secondblock {
-    height: 500px;
+    height: 700px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+  
     font-size: 20px;
+    padding-left: 20%;
+    padding-bottom: 5%;
 
 }
 
-.thirdblock{
+.card {
+    border-radius: 18px;
+    box-shadow: 10px 5px 20px black;
+    width: 500px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 20px 15px 30px black;
+}
+.blockPointetSlide {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    margin: 0 70px;
+    filter: drop-shadow(0px 5px 10px black);
+}
+
+.slideblock {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    transition: transform 1s ease-in-out, width 1s ease-in-out;
+    border-radius: 20px;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+.pointblock {
+    position: absolute;  /* maintenant se base sur .slideblock */
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15px; /* espace entre le bas du slide et les points */
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+   
+}
+
+.point {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+}
+
+.active-point {
+    background-color: white;
+}
+
+.thirdblock {
     height: 1000px;
+}
+
+#indication {
+    padding: 70px;
+    color: var(--accent-color)
 }
 
 /* ===================
@@ -92,8 +167,9 @@ h1 {
     perspective: 2000px;
     display: flex;
     align-items: center;
-
     margin: auto;
+    filter: drop-shadow(0px 5px 10px black);
+
 }
 
 
@@ -102,9 +178,8 @@ h1 {
     height: 100%;
     position: relative;
     transform-style: preserve-3d;
-    animation: rotateY(0deg);
-    transition: transform 0.3s;
     user-select: none;
+
 }
 
 .cube div {
@@ -118,11 +193,11 @@ h1 {
     font-size: 20px;
     border: 3px solid black;
 
+
 }
 
 .padding {
     padding: 50px;
-    text-align: center;
 }
 
 
@@ -164,7 +239,7 @@ h1 {
 }
 
 .thirdblock h2 {
-    margin: 120px
+    margin: 30px
 }
 
 
@@ -175,15 +250,16 @@ h1 {
 .chart-container {
     display: flex;
     width: 350px !important;
-    height:350px !important;
+    height: 350px !important;
     padding: 20px;
     background: #fff;
     border-radius: 18px;
     box-shadow: 0 4px 24px black;
 }
+
 .chart-box {
-  width: 350px;
-  height: 350px;
+    width: 350px;
+    height: 350px;
 }
 
 .piecharts {
@@ -194,7 +270,17 @@ h1 {
     padding-bottom: 24px;
 }
 
-.card{
+.card {
     width: 500px;
     text-align: center;
+}
+
+
+
+.centrer {
+    text-align: center;
+}
+
+#blockquatre {
+    height: 700px;
 }

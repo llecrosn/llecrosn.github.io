@@ -4,10 +4,11 @@
 <!-- Theme: Ecologie -->
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  <meta charset="UTF-8">
   <link rel="icon" type="image/vnd.icon" href="assets/favicon.ico">
-  <link rel="stylesheet" href="style/page4.css" />
+  <link rel="stylesheet" href="style/page4.css">
   <link rel="stylesheet" href="style/common2.css">
   <link rel="stylesheet" href="style/footer.css">
   <title>Scaleway-Ecologie</title>
@@ -16,45 +17,67 @@
 <body>
   <!-- Navbar -->
   <header>
-    <container class="navbar">
+    <div class="navbar">
       <img src="assets/FS-AFFI-00315Scaleway.png" alt="Logo" class="LogImg" id="logo">
       <nav id="menu" class="menu-hidden">
         <ul>
-          <li><a href="index.html">Acceuil</a></li>
+          <li><a href="index.html">Accueil</a></li>
           <li><a href="page1.html">Histoire</a></li>
           <li><a href="page2.html">Economie</a></li>
-          <li><a href="page3.html">Equipe</a></li>
-          <li><a href="page4.html">Ecologie</a></li>
+          <li><a href="page3.html">Équipes</a></li>
+          <li><a href="page4.html">Écologie</a></li>
           <li><a href="page5.html">Clients</a></li>
         </ul>
       </nav>
-    </container>
+    </div>
   </header>
   <main>
     <!-- ============================================premier block======================================== -->
     <div class="firstblock">
       <h1>Nos engagement en matière d'écologie</h1>
     </div>
-   
+
     <!-- ================================================second block=============================================== -->
     <div class="secondblock">
       <div class="card">
-        <h2>Une politique environnementale responsable</h2>
-        <p>
-          Notre groupe agit depuis longtemps pour réduire l’empreinte environnementale de ses
-          activités. Nos réseaux Fixe et Mobile représentent la part la plus importante dans notre
-          consommation énergétique globale. Depuis de nombreuses années, notre Groupe achète des
-          équipements de dernière génération qui se distinguent par leur efficience énergétique.
-          Nous avons aussi fait des choix qui nous permettent d’optimiser l’empreinte carbone de
-          nos data centers, en les alimentant depuis 2017 par de l’énergie 100% garantie d’origine
-          renouvelable ou en privilégiant l’implantation de nos data centers en France.
-        </p>
+        <div class="padding">
+          <h2>Une politique environnementale responsable</h2>
+          <p>
+            Notre groupe agit depuis longtemps pour réduire l’empreinte environnementale de ses
+            activités. Nos réseaux Fixe et Mobile représentent la part la plus importante dans notre
+            consommation énergétique globale. Depuis de nombreuses années, notre Groupe achète des
+            équipements de dernière génération qui se distinguent par leur efficience énergétique.
+            Nous avons aussi fait des choix qui nous permettent d’optimiser l’empreinte carbone de
+            nos data centers, en les alimentant depuis 2017 par de l’énergie 100% garantie d’origine
+            renouvelable ou en privilégiant l’implantation de nos data centers en France.
+          </p>
+        </div>
       </div>
+
+      <div class="blockPointetSlide">
+        <div class="slideblock">
+          <div class="slider">
+            <div class="slide"><img src="/assets/page4/adiabatique2.jpg"></div>
+            <div class="slide"><img src="/assets/page4/DC3.jpg"></div>
+            <div class="slide"><img src="/assets/page4/DC5.jpg"></div>
+            
+          </div>
+        
+        <div class="pointblock">
+          <span class="point" onclick="currentSlide(0)"></span>
+          <span class="point" onclick="currentSlide(1)"></span>
+          <span class="point" onclick="currentSlide(2)"></span>
+        </div>
+        </div>
+      </div>
+
+
     </div>
     <div class="divider"></div>
     <!-- ========================================================troisième block============================================== -->
     <div class="thirdblock">
-      <h2>plusieurs axes d'actions essentielles</h2>
+      <h2>Plusieurs axes d'actions essentielles</h2>
+      <p class="centrer" id="indication">essayer de déplacer le carré</p>
 
       <!-- ============================================================rectangle======================================================= -->
       <div class="container">
@@ -75,7 +98,7 @@
             </article>
           </div>
           <div class="back-card">
-            <article class="padding">
+            <article class="padding" class="centrer">
               <h3>Minimiser la consommation d'eau</h3>
               <p>
                 L'adiabatique c'est quoi?<br>
@@ -88,7 +111,7 @@
             </article>
           </div>
           <div class="left-card">
-            <article class="padding">
+            <article class="padding" class="centrer">
               <h3>Agir pour l'économie circulaire</h3>
               <p>
                 Nous avons mis en place des programme d'économie circulaire pour nos composant et serveur
@@ -99,7 +122,7 @@
             </article>
           </div>
           <div class="base-card">
-            <article class="padding">
+            <article class="padding" class="centrer">
               <h3>Excellence mesurable</h3>
               <p>
                 Notre Environmental Impact Calculator est le plus complet de tout le secteur du cloud,
@@ -114,31 +137,31 @@
     </div>
     <div class="divider"></div>
     <!-- ===============================================================quatrième block======================================================= -->
-    <h2>quelques chiffres clés</h2>
-    <div class="piecharts">
-      <!-- premier -->
-      <div class="chart-container">
-        <div class="chart-box">
-          <canvas id="PUE"></canvas>
+    <div id="blockquatre">
+      <h2 class="padding">quelques chiffres clés</h2>
+      <div class="piecharts">
+        <!-- premier -->
+        <div class="chart-container">
+          <div class="chart-box">
+            <canvas id="PUE"></canvas>
+          </div>
+        </div><!-- deuxieme -->
+        <div class="chart-container">
+          <div class="chart-box">
+            <canvas id="WUE"></canvas>
+          </div>
         </div>
-      </div><!-- deuxieme -->
-      <div class="chart-container">
-        <div class="chart-box">
-          <canvas id="WUE"></canvas>
+        <!-- troisieme -->
+        <div class="chart-container">
+          <div class="chart-box">
+            <canvas id="ecoenergie"></canvas>
+          </div>
         </div>
       </div>
-      <!-- troisieme -->
-      <div class="chart-container">
-        <div class="chart-box">
-          <canvas id="ecoenergie"></canvas>
-        </div>
-      </div>
+      <p class="centrer">La dénomination scaleway DC5,4,3 fait référence aux différent data center de notre entreprise.
+      </p>
     </div>
     <div class="divider"></div>
-    <!-- =====================================================================cinquième block======================================================== -->
-    <h2></h2>
-<p></p>
-
   </main>
   <!-- ===========================================================================footer============================================================= -->
 
@@ -208,7 +231,7 @@
           'Scaleway DC3 (0,00009 L/kWh)',
           'Scaleway DC4 (0,00002 L/kWh)',
           'Datacenter classique (1,8 L/kWh)'
-          
+
         ],
         datasets: [{
           label: '%',
@@ -231,7 +254,7 @@
       }
     });
     // troisieme graphique
-     const ctx3 = document.getElementById('ecoenergie');
+    const ctx3 = document.getElementById('ecoenergie');
 
     new Chart(ctx3, {
       type: 'bar',
@@ -239,11 +262,11 @@
         labels: [
           'Scaleway DC5 (30 à 50 % de moins)',
           'Datacenter classique (100 %)'
-         
+
         ],
         datasets: [{
           label: '%',
-          data: [30,100],
+          data: [30, 100],
           borderWidth: 1
         }]
       },
