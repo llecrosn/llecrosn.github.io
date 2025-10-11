@@ -1,27 +1,13 @@
+/* ======================================
+   VARIABLES & RESET DE BASE
+====================================== */
 :root {
     --main-color: #452145;
     --accent-color: #A284AE;
     --secondary-color: #EDF060;
     --tertiary-color: #2E79DC;
-
-    --background-color: #ffffff;
-    --background-color-second: #ffffff;
 }
 
-.divider {
-    height: 8px;
-    background-color: var(--main-color);
-
-    padding: 0;
-    margin: 0;
-}
-
-@font-face {
-    font-family: "Montserrat";
-    src: url("../assets/font/Montserrat.ttf");
-}
-
-/* Reset de base*/
 * {
     margin: 0;
     padding: 0;
@@ -32,63 +18,225 @@ html {
     scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: "Montserrat";
+    src: url("../assets/font/Montserrat.ttf");
+}
 
+/* ======================================
+   STRUCTURE GÉNÉRALE
+====================================== */
 main {
     width: 100%;
     height: fit-content;
     display: flex;
     flex-direction: column;
-
 }
 
-h2 {
+.divider {
+    height: 8px;
+    background-color: var(--main-color);
+    padding: 0;
+    margin: 0;
+}
+
+.highlight {
+    color: var(--secondary-color);
+}
+.fonce{
+    color:var(--main-color)
+}
+
+.centrer {
     text-align: center;
-
-
 }
 
-
+/* ======================================
+   TYPOGRAPHIE
+====================================== */
 h1 {
     font-size: 8vh;
     width: fit-content;
     font-family: 'Montserrat';
 }
 
-/* =================
-||première section ||
-================= */
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.thirdblock h2 {
+    margin: 30px;
+}
+
+/* ======================================
+   structure DES BLOCS
+====================================== */
 .firstblock {
     height: 15vh;
     display: flex;
     padding-top: 4%;
     justify-content: center;
-
+    text-align: center;
 }
-
-/* ===================
-||   seconde section ||
-==================== */
 
 .secondblock {
     height: 700px;
     display: flex;
-  
     font-size: 20px;
     padding-left: 20%;
     padding-bottom: 5%;
-
 }
 
+.thirdblock {
+    height: 1000px;
+}
+
+#blockquatre {
+    height: 1000px;
+}
+
+/* ======================================
+   CARDS & IMAGES
+====================================== */
 .card {
     border-radius: 18px;
     box-shadow: 10px 5px 20px black;
     width: 500px;
+    text-align: center;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
     transform: scale(1.1);
     box-shadow: 20px 15px 30px black;
 }
+
+.card-adia{
+    border-radius: 20px;
+    box-shadow: 10px 5px 20px black;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+   overflow: hidden;
+   margin-top: 70px;
+   
+}
+
+.card-adia:hover {
+    transform: scale(1.1);
+    box-shadow: 20px 15px 30px black;
+}
+
+.card-adia img {
+    max-width: 100%;
+    max-height: auto;
+    display: block;
+    align-self: center;
+}
+
+
+
+/* ======================================
+   CUBE 3D
+====================================== */
+#indication {
+    padding-bottom: 70px;
+    text-align: center;
+    color: var(--accent-color);
+}
+
+#align_indication {
+    margin-left: 20%;
+    display: inline-block;
+}
+
+.aligne{
+    display: flex;
+    gap: 200px;
+    
+}
+
+
+.container {
+    width: 600px;
+    height: 500px;
+    perspective: 2000px;
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(0px 5px 10px black);
+}
+
+.cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    user-select: none;
+}
+
+.cube div {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: wrap;
+    overflow: hidden;
+    font-size: 20px;
+    border: 3px solid black;
+}
+
+.padding {
+    padding: 50px;
+}
+
+/* Faces du cube */
+.front-card {
+    transform: rotateY(0deg) translateZ(300px);
+    background: var(--tertiary-color);
+    color: white;
+    text-align: center;
+}
+
+.back-card {
+    transform: rotateY(180deg) translateZ(300px);
+    background: var(--tertiary-color);
+    color: white;
+    text-align: center;
+}
+
+.left-card {
+    transform: rotateY(-90deg) translateZ(300px);
+    background: var(--accent-color);
+    color: white;
+    text-align: center;
+}
+
+.base-card {
+    transform: rotateY(90deg) translateZ(300px);
+    background: var(--accent-color);
+    color: white;
+    text-align: center;
+}
+
+/* Animation du cube */
+@keyframes rotate {
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    to {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+/* ======================================
+   SLIDER (BLOCK 2)
+====================================== */
 .blockPointetSlide {
     position: relative;
     display: flex;
@@ -124,14 +272,13 @@ h1 {
 }
 
 .pointblock {
-    position: absolute;  /* maintenant se base sur .slideblock */
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 15px; /* espace entre le bas du slide et les points */
+    bottom: 15px;
     text-align: center;
     padding: 5px;
     border-radius: 20px;
-   
 }
 
 .point {
@@ -149,104 +296,9 @@ h1 {
     background-color: white;
 }
 
-.thirdblock {
-    height: 1000px;
-}
-
-#indication {
-    padding: 70px;
-    color: var(--accent-color)
-}
-
-/* ===================
-||   Le rectangle   ||
-==================== */
-.container {
-    width: 600px;
-    height: 500px;
-    perspective: 2000px;
-    display: flex;
-    align-items: center;
-    margin: auto;
-    filter: drop-shadow(0px 5px 10px black);
-
-}
-
-
-.cube {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transform-style: preserve-3d;
-    user-select: none;
-
-}
-
-.cube div {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    text-wrap: wrap;
-    overflow: hidden;
-    font-size: 20px;
-    border: 3px solid black;
-
-
-}
-
-.padding {
-    padding: 50px;
-}
-
-
-/*face*/
-.front-card {
-    transform: rotateY(0deg) translateZ(300px);
-    background: var(--tertiary-color);
-    color: white;
-
-}
-
-.back-card {
-    transform: rotateY(180deg) translateZ(300px);
-    background: var(--tertiary-color);
-    color: white;
-}
-
-.left-card {
-    transform: rotateY(-90deg) translateZ(300px);
-    background: var(--accent-color);
-    color: white;
-}
-
-.base-card {
-    transform: rotateY(90deg) translateZ(300px);
-    background: var(--accent-color);
-    color: white;
-}
-
-
-@keyframes rotate {
-    from {
-        transform: rotateX(0deg) rotateY(0deg);
-    }
-
-    to {
-        transform: rotateX(360deg) rotateY(360deg);
-    }
-}
-
-.thirdblock h2 {
-    margin: 30px
-}
-
-
-
-/* ===================
-||  les graphiques   ||
-==================== */
+/* ======================================
+   GRAPHIQUES
+====================================== */
 .chart-container {
     display: flex;
     width: 350px !important;
@@ -270,17 +322,66 @@ h1 {
     padding-bottom: 24px;
 }
 
-.card {
-    width: 500px;
-    text-align: center;
+/* ======================================
+   image serveur de scaleway
+====================================== */
+
+.enrouleur{
+    display: flex;
+    width: 900px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 4px 24px black;
+    
 }
 
-
-
-.centrer {
-    text-align: center;
+.imgcarde{
+    position: relative;
+    flex:1;
+    overflow: hidden;
+    transition: flex 0.5s ease-in-out;
+    cursor: pointer;
+}
+.imgcarde img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%) contrast(90%);
+    transition: filter 0.5s ease-in-out;
+}
+.imgcarde:hover{
+    flex:3
+}
+.imgcarde:hover img{
+    filter:none
+}
+.text-overlay{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
-#blockquatre {
-    height: 700px;
+.imgcarde:hover .text-overlay{
+    opacity: 1;
+}
+
+.text-overlay h3{
+    font-size: 30px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.text-overlay p{
+    font-size: 20px;
+    font-weight: 400;
+}
+.imgserveur{
+    display: flex;
+    justify-content: center; /* centre horizontalement */
+    align-items: center; 
+    margin-top: 20px;
 }
