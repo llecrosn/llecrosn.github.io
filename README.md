@@ -21,7 +21,7 @@ Pour la conception du site, nous nous sommes grandement inspirés du site offici
 
 **Auteur : Lecoq Brian et Gossiaux--chopard-guillaumot Mathis**  
 
-Vérification W3C : [Détail ICI](https://)
+Vérification W3C : [Détail ICI](https://validator.w3.org/nu/?doc=https%3A%2F%2Fllecrosn.github.io%2F)
 
 ![capture d'écran de la conformité de la page ...](doc/capture_1_W3C.png)
 
