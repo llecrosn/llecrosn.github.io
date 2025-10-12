@@ -22,9 +22,28 @@
 /* ======================
    SECTION HERO
 ====================== */
+.home-page .cta-button {
+    display: inline-block;
+    margin-top: 2.5rem;
+    padding: 12px 28px;
+    background-color: var(--bright-blue);
+    color: var(--white);
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Noto Sans', sans-serif;
+    box-shadow: 0 4px 15px rgba(46, 121, 220, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-page .cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 20px rgba(46, 121, 220, 0.6);
+}
+
 .home-page .hero {
     position: relative;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -86,6 +105,68 @@
     opacity: 0.6;
     box-shadow: 6px 6px 0 var(--bright-yellow);
     border-radius: 10px;
+}
+
+
+
+/* ======================
+   SECTION features
+====================== */
+
+.home-page .features {
+    padding: 50px 5%;
+    background-color: #F5F3F6;
+    text-align: center;
+}
+
+.home-page .section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: var(--dark-purple);
+    margin-bottom: 50px;
+}
+
+.home-page .features-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; 
+}
+
+.home-page .feature-card {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+    width: 300px;
+    border-top: 5px solid var(--light-purple);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-page .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.home-page .feature-card:nth-child(2) {
+    border-top-color: var(--bright-yellow);
+}
+.home-page .feature-card:nth-child(3) {
+    border-top-color: var(--bright-blue);
+}
+
+.home-page .feature-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--dark-purple);
+}
+
+.home-page .feature-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--dark-purple);
+    opacity: 0.8;
 }
 
 /* Positionnement et variations de couleur */
