@@ -38,7 +38,7 @@ Verification W3C : [Détail ICI](https://validator.w3.org/nu/?doc=https%3A%2F%2F
 
 **Auteur : Gossiaux--chopard-guillaumot Mathis**  
 
-Verification W3C : [Détail ICI](https://)
+Verification W3C : [Détail ICI](https://validator.w3.org/nu/?doc=https%3A%2F%2Fllecrosn.github.io%2Fpage2.html)
 ![capture d'écran de la conformité de la page ...](doc/capture_3_W3C.png)
 
 ![capture d'écran sur le site https://www.ecoindex.fr/ pour tester l'eco-conception](doc/capture_3_ecoconcept.png)
