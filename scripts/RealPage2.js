@@ -85,11 +85,8 @@ window.addEventListener('resize', () => {
     init();
 });
 
-document.querySelectorAll('img').forEach(img => {
+document.querySelectorAll('.dispinfos-2 img').forEach(img => {
   img.addEventListener('click', () => {
     img.classList.toggle('zoomed');
-    
   });
 });
-
-
