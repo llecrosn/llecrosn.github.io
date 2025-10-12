@@ -64,7 +64,7 @@ Verification W3C : [Détail ICI](https://validator.w3.org/nu/?doc=https%3A%2F%2F
 ![capture d'écran sur le site https://www.ecoindex.fr/ pour tester l'eco-conception](doc/capture_6_ecoconcept.png)
 
 **Auteur : Barry Idrissa**  
-Verification W3C : [Détail ICI](https://)
+Verification W3C : [Détail ICI](https://validator.w3.org/nu/?doc=https%3A%2F%2Fllecrosn.github.io%2Fpage7.html)
 ![capture d'écran de la conformité de la page ...](doc/capture_7_W3C.png)
 
 ![capture d'écran sur le site https://www.ecoindex.fr/ pour tester l'eco-conception](doc/capture_7_ecoconcept.png)
